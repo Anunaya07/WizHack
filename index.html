@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WizHack</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class='wrapper' id='Wrap'>
+		<form id='searchForm'>
+		<div class='form-uname'>
+			<label id='searchLabel' for='searchField'>Question: </label>
+			<input id='searchField' type='text' maxlength='1000'></input>
+		</div>
+		<div class='form-sub'>
+			<button id='subButton' type='button'>Search</button>
+		</div>
+		</form>
+	</div>
+	<p id="searched" style="display:none;"></p>
+	<div class='resultgoogle'>
+		<button id='google' type='button' style="display: none;">Google</button>
+	</div>
+	<div class='resultstack'>
+		<button id='stackButton' type='button' style="display: none;">Stackoverflow</button>
+	</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
