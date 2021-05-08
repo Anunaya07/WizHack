@@ -1,0 +1,2 @@
+# WizHack
+Frosthack Hackathon
