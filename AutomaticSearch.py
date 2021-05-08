@@ -4,6 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
+query = input()
+
 PATH = "C:\\Users\\Dhruv Rishishwar\\Desktop\\Coding\\chromedriver.exe"
 # create webdriver object
 driver = webdriver.Chrome(PATH)
@@ -14,5 +16,6 @@ searchButton.click()
 
 inputField = driver.find_element_by_name('search')
 inputField.click()
-inputField.send_keys("Google search with python")
+
+inputField.send_keys(query)
 inputField.send_keys(Keys.ENTER)
